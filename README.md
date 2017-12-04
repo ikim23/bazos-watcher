@@ -1,6 +1,6 @@
 # Bazos Watcher
 
-Simple application watching for webpage changes. User is notified on change e-mail.
+Simple application watching for webpage changes. User is notified on change via e-mail.
 
 Built on top of the AWS services (Lambda, DynamoDB, SES).
 
