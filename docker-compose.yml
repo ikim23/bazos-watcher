@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+
+  shell:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: serverless-boilerplate
+    volumes:
+     - .:/usr/src/app
+    env_file: .env
+    command: bash
+
+  install:
+    extends:
+      service: shell
+    command: npm i --silent
+
+  test:
+    extends:
+      service: shell
+    command: npm run lint-test --silent
+
+  deploy:
+    extends:
+      service: shell
+    command: sls deploy

@@ -1,0 +1,25 @@
+{
+  "author": "ikim23",
+  "name": "bazos-watcher",
+  "description": "",
+  "version": "1.0.0",
+  "license": "ISC",
+  "repository": {},
+  "scripts": {
+    "lint": "eslint --ext .js functions/ test/"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "serverless-plugin-include-dependencies": "^2.1.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.162.0",
+    "jsdom": "^11.5.1",
+    "lodash": "^4.17.4",
+    "mustache": "^2.3.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
